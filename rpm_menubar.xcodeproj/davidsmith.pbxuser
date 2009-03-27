@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = F72871510F586B6F0070008B /* rpm_menubar */;
+		activeTarget = 8D1107260486CEB800E47090 /* rpm_menubar */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* rpm_menubar */,
+		);
+		breakpoints = (
+			F72871D70F5879DF0070008B /* ApiHandler.m:104 */,
+			F72872230F587E8C0070008B /* ApiHandler.m:62 */,
+			F728726C0F5882B10070008B /* ApiHandler.m:77 */,
+			F728727D0F5883100070008B /* ApiHandler.m:99 */,
+			F72873030F5890150070008B /* ApplicationStatus.m:63 */,
+			F72873100F58905E0070008B /* ApiHandler.m:79 */,
+			F72873B80F589B9C0070008B /* RpmMenu.m:125 */,
+			F72874090F58A3CD0070008B /* ApiHandler.m:16 */,
+			F7E413940F5960F300EA72E9 /* PreferencesController.m:48 */,
+			F7E413C80F59891E00EA72E9 /* PreferencesController.m:98 */,
+			F7E413CD0F5989A200EA72E9 /* PreferencesController.m:98 */,
+			F7E413E30F598A3200EA72E9 /* PreferencesController.m:98 */,
+			F7E413EB0F598A9A00EA72E9 /* PreferencesController.m:55 */,
+			F7E413FB0F598B7500EA72E9 /* PreferencesController.m:98 */,
+			F7E414030F598B8C00EA72E9 /* PreferencesController.m:94 */,
+			F7E414640F59C2CC00EA72E9 /* RpmMenu.m:74 */,
+			F7E4146A0F59C30A00EA72E9 /* ApiHandler.m:110 */,
+			F7E414740F59C39700EA72E9 /* RpmMenu.m:196 */,
+			F75A3EB00F6085D100688356 /* ApiHandler.m:16 */,
+			F7234A0E0F694282000AA253 /* ApiHandler.m:55 */,
+			F7234A1E0F694311000AA253 /* ApiHandler.m:58 */,
+			F7234A320F694413000AA253 /* ApiHandler.m:25 */,
+		);
+		codeSenseManager = F728715F0F586B8F0070008B /* Code sense */;
+		executables = (
+			F72871510F586B6F0070008B /* rpm_menubar */,
+		);
+		expressions = (
+			receivedData,
+			error,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					993,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					793,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 259801274;
+			PBXWorkspaceStateSaveDate = 259801274;
+		};
+		perUserProjectItems = {
+			F72349EC0F6941EF000AA253 /* PBXBookmark */ = F72349EC0F6941EF000AA253 /* PBXBookmark */;
+			F72349F00F6941EF000AA253 /* PBXBookmark */ = F72349F00F6941EF000AA253 /* PBXBookmark */;
+			F7932E2F0F7C4108003AF55A /* PBXTextBookmark */ = F7932E2F0F7C4108003AF55A /* PBXTextBookmark */;
+			F7932E310F7C4108003AF55A /* PBXTextBookmark */ = F7932E310F7C4108003AF55A /* PBXTextBookmark */;
+			F7932E350F7C4108003AF55A /* PlistBookmark */ = F7932E350F7C4108003AF55A /* PlistBookmark */;
+			F7932E360F7C4108003AF55A /* PBXTextBookmark */ = F7932E360F7C4108003AF55A /* PBXTextBookmark */;
+			F7932E370F7C4108003AF55A /* PBXTextBookmark */ = F7932E370F7C4108003AF55A /* PBXTextBookmark */;
+			F7932E380F7C4108003AF55A /* PBXTextBookmark */ = F7932E380F7C4108003AF55A /* PBXTextBookmark */;
+			F7932E390F7C4108003AF55A /* PBXTextBookmark */ = F7932E390F7C4108003AF55A /* PBXTextBookmark */;
+			F7932E450F7C4186003AF55A /* PBXTextBookmark */ = F7932E450F7C4186003AF55A /* PBXTextBookmark */;
+			F7932E460F7C4186003AF55A /* PBXTextBookmark */ = F7932E460F7C4186003AF55A /* PBXTextBookmark */;
+			F7932E4F0F7CF52C003AF55A /* PBXTextBookmark */ = F7932E4F0F7CF52C003AF55A /* PBXTextBookmark */;
+			F7932E500F7CF52C003AF55A /* PlistBookmark */ = F7932E500F7CF52C003AF55A /* PlistBookmark */;
+			F7932E510F7CF52C003AF55A /* PBXTextBookmark */ = F7932E510F7CF52C003AF55A /* PBXTextBookmark */;
+			F7932E520F7CF52C003AF55A /* PlistBookmark */ = F7932E520F7CF52C003AF55A /* PlistBookmark */;
+			F7E4136D0F59602200EA72E9 /* PlistBookmark */ = F7E4136D0F59602200EA72E9 /* PlistBookmark */;
+		};
+		sourceControlManager = F728715E0F586B8F0070008B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* rpm_menubar */ = {
+		activeExec = 0;
+		executables = (
+			F72871510F586B6F0070008B /* rpm_menubar */,
+		);
+	};
+	F72349EC0F6941EF000AA253 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F72873B20F589B820070008B /* loading.png */;
+	};
+	F72349F00F6941EF000AA253 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F72873B20F589B820070008B /* loading.png */;
+	};
+	F7234A0E0F694282000AA253 /* ApiHandler.m:55 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 55;
+		location = "RPM Status";
+		modificationTime = 258599391.967253;
+		state = 2;
+	};
+	F7234A1E0F694311000AA253 /* ApiHandler.m:58 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 58;
+		location = "RPM Status";
+		modificationTime = 258599391.967297;
+		state = 2;
+	};
+	F7234A320F694413000AA253 /* ApiHandler.m:25 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-getData:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 25;
+		location = "RPM Status";
+		modificationTime = 258599391.967341;
+		state = 2;
+	};
+	F72871510F586B6F0070008B /* rpm_menubar */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = rpm_menubar;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	F728715E0F586B8F0070008B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	F728715F0F586B8F0070008B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	F72871610F586B920070008B /* RpmMenu.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = RpmMenu.m;
+		path = /Users/davidsmith/dev/rpm_menubar/RpmMenu.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 2828}}";
+			sepNavSelRange = "{4567, 0}";
+			sepNavVisRange = "{4317, 991}";
+		};
+	};
+	F72871A00F5874E40070008B /* ApiHandler.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ApiHandler.m;
+		path = /Users/davidsmith/dev/rpm_menubar/ApiHandler.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 1820}}";
+			sepNavSelRange = "{785, 0}";
+			sepNavVisRange = "{381, 807}";
+			sepNavWindowFrame = "{{15, 31}, {849, 847}}";
+		};
+	};
+	F72871A30F58756C0070008B /* ApplicationStatus.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ApplicationStatus.m;
+		path = /Users/davidsmith/dev/rpm_menubar/ApplicationStatus.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1110, 1036}}";
+			sepNavSelRange = "{1060, 0}";
+			sepNavVisRange = "{611, 1186}";
+			sepNavWindowFrame = "{{15, 26}, {849, 847}}";
+		};
+	};
+	F72871D70F5879DF0070008B /* ApiHandler.m:104 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 104;
+		location = rpm_menubar;
+		modificationTime = 258599391.96615;
+		state = 2;
+	};
+	F72872230F587E8C0070008B /* ApiHandler.m:62 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 62;
+		location = rpm_menubar;
+		modificationTime = 258599391.966254;
+		state = 2;
+	};
+	F728726C0F5882B10070008B /* ApiHandler.m:77 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 77;
+		location = rpm_menubar;
+		modificationTime = 258599391.966302;
+		state = 2;
+	};
+	F728727D0F5883100070008B /* ApiHandler.m:99 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 99;
+		location = rpm_menubar;
+		modificationTime = 258599391.966346;
+		state = 2;
+	};
+	F72873030F5890150070008B /* ApplicationStatus.m:63 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A30F58756C0070008B /* ApplicationStatus.m */;
+		functionName = "-set_threshold:for_field:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 63;
+		location = rpm_menubar;
+		modificationTime = 258599391.966391;
+		state = 2;
+	};
+	F72873100F58905E0070008B /* ApiHandler.m:79 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 79;
+		location = rpm_menubar;
+		modificationTime = 258599391.966409;
+		state = 2;
+	};
+	F72873B80F589B9C0070008B /* RpmMenu.m:125 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871610F586B920070008B /* RpmMenu.m */;
+		functionName = "-updateStatus:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 125;
+		location = rpm_menubar;
+		modificationTime = 258599391.966455;
+		state = 2;
+	};
+	F72874090F58A3CD0070008B /* ApiHandler.m:16 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connection:didReceiveAuthenticationChallenge:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 16;
+		location = rpm_menubar;
+		modificationTime = 258599391.966525;
+		state = 2;
+	};
+	F75A3EB00F6085D100688356 /* ApiHandler.m:16 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connection:didReceiveAuthenticationChallenge:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 16;
+		modificationTime = 259801275.982142;
+		state = 0;
+	};
+	F7932E0A0F7C40E0003AF55A /* AGKeychain.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 409}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1202}";
+		};
+	};
+	F7932E0B0F7C40E0003AF55A /* AGKeychain.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1128, 3752}}";
+			sepNavSelRange = "{5579, 0}";
+			sepNavVisRange = "{5579, 936}";
+			sepNavWindowFrame = "{{15, 85}, {1266, 788}}";
+		};
+	};
+	F7932E0C0F7C40E0003AF55A /* ApiHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 409}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 323}";
+		};
+	};
+	F7932E0D0F7C40E0003AF55A /* ApiHandler.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 1708}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1018}";
+		};
+	};
+	F7932E2F0F7C4108003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0A0F7C40E0003AF55A /* AGKeychain.h */;
+		name = "AGKeychain.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	F7932E310F7C4108003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0D0F7C40E0003AF55A /* ApiHandler.m */;
+		name = "ApiHandler.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1018;
+		vrLoc = 0;
+	};
+	F7932E350F7C4108003AF55A /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = /Users/davidsmith/dev/rpm_menubar/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	F7932E360F7C4108003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0B0F7C40E0003AF55A /* AGKeychain.m */;
+		name = "AGKeychain.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 719;
+		vrLoc = 0;
+	};
+	F7932E370F7C4108003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0A0F7C40E0003AF55A /* AGKeychain.h */;
+		name = "AGKeychain.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	F7932E380F7C4108003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0B0F7C40E0003AF55A /* AGKeychain.m */;
+		name = "AGKeychain.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 719;
+		vrLoc = 0;
+	};
+	F7932E390F7C4108003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0D0F7C40E0003AF55A /* ApiHandler.m */;
+		name = "ApiHandler.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1018;
+		vrLoc = 0;
+	};
+	F7932E450F7C4186003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0C0F7C40E0003AF55A /* ApiHandler.h */;
+		name = "ApiHandler.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 323;
+		vrLoc = 0;
+	};
+	F7932E460F7C4186003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0C0F7C40E0003AF55A /* ApiHandler.h */;
+		name = "ApiHandler.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 323;
+		vrLoc = 0;
+	};
+	F7932E4F0F7CF52C003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0B0F7C40E0003AF55A /* AGKeychain.m */;
+		name = "AGKeychain.m: 173";
+		rLen = 0;
+		rLoc = 5571;
+		rType = 0;
+		vrLen = 1188;
+		vrLoc = 5022;
+	};
+	F7932E500F7CF52C003AF55A /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = /Users/davidsmith/dev/rpm_menubar/Info.plist;
+		rLen = 4;
+		rLoc = 0;
+	};
+	F7932E510F7CF52C003AF55A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F7932E0B0F7C40E0003AF55A /* AGKeychain.m */;
+		name = "AGKeychain.m: 173";
+		rLen = 0;
+		rLoc = 5571;
+		rType = 0;
+		vrLen = 1188;
+		vrLoc = 5022;
+	};
+	F7932E520F7CF52C003AF55A /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = /Users/davidsmith/dev/rpm_menubar/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	F7E4135A0F595A5000EA72E9 /* PreferencesController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = PreferencesController.m;
+		path = /Users/davidsmith/dev/rpm_menubar/PreferencesController.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {996, 1610}}";
+			sepNavSelRange = "{1267, 0}";
+			sepNavVisRange = "{1103, 503}";
+		};
+	};
+	F7E4136D0F59602200EA72E9 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSUIElement,
+		);
+		name = /Users/davidsmith/dev/rpm_menubar/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	F7E413940F5960F300EA72E9 /* PreferencesController.m:48 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F7E4135A0F595A5000EA72E9 /* PreferencesController.m */;
+		functionName = "-windowWillLoad";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 48;
+		location = rpm_menubar;
+		modificationTime = 258599391.966599;
+		state = 2;
+	};
+	F7E413C80F59891E00EA72E9 /* PreferencesController.m:98 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F7E4135A0F595A5000EA72E9 /* PreferencesController.m */;
+		functionName = "-connection:didReceiveAuthenticationChallenge:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 98;
+		location = rpm_menubar;
+		modificationTime = 258599391.966669;
+		state = 2;
+	};
+	F7E413CD0F5989A200EA72E9 /* PreferencesController.m:98 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F7E4135A0F595A5000EA72E9 /* PreferencesController.m */;
+		functionName = "-connection:didReceiveAuthenticationChallenge:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 98;
+		location = rpm_menubar;
+		modificationTime = 258599391.966717;
+		state = 2;
+	};
+	F7E413E30F598A3200EA72E9 /* PreferencesController.m:98 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F7E4135A0F595A5000EA72E9 /* PreferencesController.m */;
+		functionName = "-connection:didReceiveAuthenticationChallenge:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 98;
+		location = rpm_menubar;
+		modificationTime = 258599391.966757;
+		state = 2;
+	};
+	F7E413EB0F598A9A00EA72E9 /* PreferencesController.m:55 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F7E4135A0F595A5000EA72E9 /* PreferencesController.m */;
+		functionName = "-verify:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 55;
+		location = rpm_menubar;
+		modificationTime = 258599391.966795;
+		state = 2;
+	};
+	F7E413FB0F598B7500EA72E9 /* PreferencesController.m:98 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F7E4135A0F595A5000EA72E9 /* PreferencesController.m */;
+		functionName = "-connection:didReceiveAuthenticationChallenge:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 98;
+		location = rpm_menubar;
+		modificationTime = 258599391.9668389;
+		state = 2;
+	};
+	F7E414030F598B8C00EA72E9 /* PreferencesController.m:94 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F7E4135A0F595A5000EA72E9 /* PreferencesController.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 94;
+		location = rpm_menubar;
+		modificationTime = 258599391.966878;
+		state = 2;
+	};
+	F7E414640F59C2CC00EA72E9 /* RpmMenu.m:74 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871610F586B920070008B /* RpmMenu.m */;
+		functionName = "-updateStatus:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 74;
+		location = rpm_menubar;
+		modificationTime = 258599391.966917;
+		state = 2;
+	};
+	F7E4146A0F59C30A00EA72E9 /* ApiHandler.m:110 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871A00F5874E40070008B /* ApiHandler.m */;
+		functionName = "-connectionDidFinishLoading:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 110;
+		location = rpm_menubar;
+		modificationTime = 258599391.967095;
+		state = 2;
+	};
+	F7E414740F59C39700EA72E9 /* RpmMenu.m:196 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = F72871610F586B920070008B /* RpmMenu.m */;
+		functionName = "-applicationDidFinishLaunching:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 196;
+		location = "RPM Status";
+		modificationTime = 258599391.967143;
+		state = 2;
+	};
+}

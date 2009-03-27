@@ -6,3 +6,14 @@ I have created a Mac OS X Stats Bar Application that uses the API to keep a cons
  
  
  Questions, Comments, Suggestions  --> david@crossforward.com
+                        
+Many thanks to Dr Nic for his excellent Choc Top library used in the packaging of this app. (http://github.com/drnic/choctop/tree/master) 
+
+
+INSTALLATION
+
+ - Grab the latest binary release from /release
+ - Open the dmg file and copy the application to your applications folder
+ - Enjoy
+ 
+ 
