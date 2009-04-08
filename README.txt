@@ -16,4 +16,6 @@ INSTALLATION
  - Open the dmg file and copy the application to your applications folder
  - Enjoy
  
- 
+ RELEASES:
+  - 1.0 Initial version
+  - 1.1 Increase refresh interval to 60 seconds at New Relic's request
