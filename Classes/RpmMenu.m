@@ -173,7 +173,7 @@
 
 - (void) applicationDidFinishLaunching:(NSNotification *)notification {
 	
-	timer = [NSTimer scheduledTimerWithTimeInterval: 15
+	timer = [NSTimer scheduledTimerWithTimeInterval: 60
 											 target: self
 										   selector: @selector(handleTimer:)
 										   userInfo: nil
