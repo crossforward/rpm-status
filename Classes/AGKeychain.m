@@ -27,7 +27,7 @@
     OSErr result;
     int numberOfItemsFound = 0;
 	
-	attributes[0].tag = kSecAccountItemAttr;
+	attributes[0].tag = kSecAccountItemAttr  ;
     attributes[0].data = (void *)[username UTF8String];
     attributes[0].length = [username length];
     
