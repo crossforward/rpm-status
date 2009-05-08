@@ -7,7 +7,7 @@
 //
 
 #import "RpmMenu.h"
-#import "ApiHandler.h"
+
 #import "ApplicationStatus.h"
 #import "AGKeychain.h"
 #import "PreferencesController.h"
@@ -29,7 +29,7 @@
 }
 
 - (void) actionPreferences:(id)sender {
-	PreferencesController* pref = [[PreferencesController alloc] init];
+	//PreferencesController* pref = [[PreferencesController alloc] init];
 	[pref showWindow:self];
 }
 
@@ -107,16 +107,12 @@
 	[menu addItem:[NSMenuItem separatorItem]];
 	
 	// Add Preferences Action
-	menuItem = [menu addItemWithTitle:@"Preferences"
-							   action:@selector(actionPreferences:)
-						keyEquivalent:@""];
+	menuItem = [menu addItemWithTitle:@"Preferences"   action:@selector(actionPreferences:)	keyEquivalent:@""];
 	[menuItem setToolTip:@"Set Credentials for RPM"];
 	[menuItem setTarget:self];
 	
 	// Add Quit Action
-	menuItem = [menu addItemWithTitle:@"Quit"
-							   action:@selector(actionQuit:)
-						keyEquivalent:@""];
+	menuItem = [menu addItemWithTitle:@"Quit"   action:@selector(actionQuit:)		keyEquivalent:@""];
 	[menuItem setToolTip:@"Click to Quit this App"];
 	[menuItem setTarget:self];
 	
@@ -135,35 +131,33 @@
 }
 
 - (void) handleTimer: (NSTimer *) timer{
-	[[[ApiHandler alloc] init] getData:self];
+	//[[[ApiHandler alloc] init] getData:self ];
+	//[[[ApiHandler alloc] init] getData:self apiKeyCount:[pref apiKeyCount]];
+	[pref updateKeyArrayFromKeychain];
+	[apiHandler  getData:self];
 }
 
 
-- (NSMenu *) createMenu {
+- (NSMenu *) createMenu 
+{
 	NSZone *menuZone = [NSMenu menuZone];
 	NSMenu *menu = [[NSMenu allocWithZone:menuZone] init];
 	NSMenuItem *menuItem;
 	
 	// Add To Items
-	menuItem = [menu addItemWithTitle:@"Loading..."
-							   action:nil
-						keyEquivalent:@""];
+	menuItem = [menu addItemWithTitle:@"Loading..."   action:nil	keyEquivalent:@""];
 	[menuItem setTarget:self];
 	// Add Separator
 	[menu addItem:[NSMenuItem separatorItem]];
 
 	// Add Preferences Action
-	menuItem = [menu addItemWithTitle:@"Preferences"
-							   action:@selector(actionPreferences:)
-						keyEquivalent:@"P"];
+	menuItem = [menu addItemWithTitle:@"Preferences"  action:@selector(actionPreferences:)	keyEquivalent:@"P"];
 	[menuItem setToolTip:@"Set Credentials for RPM"];
 	[menuItem setTarget:self];
 	
 	
 	// Add Quit Action
-	menuItem = [menu addItemWithTitle:@"Quit"
-							   action:@selector(actionQuit:)
-						keyEquivalent:@""];
+	menuItem = [menu addItemWithTitle:@"Quit"   action:@selector(actionQuit:)	keyEquivalent:@""];
 	[menuItem setToolTip:@"Click to Quit this App"];
 	[menuItem setTarget:self];
 	
@@ -171,13 +165,20 @@
 }
 
 
-- (void) applicationDidFinishLaunching:(NSNotification *)notification {
-	
-	timer = [NSTimer scheduledTimerWithTimeInterval: 60
+
+-(void)beginTimer
+{
+	timer = [NSTimer scheduledTimerWithTimeInterval: 20
 											 target: self
 										   selector: @selector(handleTimer:)
 										   userInfo: nil
-											repeats: YES];
+											repeats: YES];	
+	
+}
+
+- (void) applicationDidFinishLaunching:(NSNotification *)notification {
+	
+
 	
 	[NSBundle loadNibNamed:@"Header" owner:self];
 	
@@ -189,13 +190,36 @@
 	[_statusItem setHighlightMode:YES];
 	[_statusItem setToolTip:@"RPM Status"];
 	[_statusItem setImage:[NSImage imageNamed:@"loading"]];
-	[[[ApiHandler alloc] init] getData:self];
+	//[[[ApiHandler alloc] init] getData:self];
+
+	pref = [[PreferencesController alloc] init];
+	[pref initialize];
+
 	
-	
-	if(![AGKeychain checkForExistanceOfKeychainItem:@"rpm_key"	withItemKind:@"rpm_key" forUsername:@"rpm_key"]) {
-		PreferencesController* pref = [[PreferencesController alloc] init];
+	apiHandler=[[ApiHandler alloc]init];
+	[apiHandler setPrefs:pref];
+
+	//First run, check for base key "rpm_key"... 	
+	if(![AGKeychain checkForExistanceOfKeychainItem:@"rpm_key0"	withItemKind:@"rpm_key0" forUsername:@"rpm_key0"]) {
+		
+		// ...if missing, create it and show preferences screen for entry of first API key.
+		NSLog(@"First Run.  Launch Prefs.");
+		//PreferencesController* pref = [[PreferencesController alloc] init];
 		[pref showWindow:self];
 	}
+	else
+	{
+		[pref updateKeyArrayFromKeychain];
+
+		[self handleTimer:nil];	
+		[self beginTimer];
+	}
+
+	
+
+
+	
+
 }
 
 @end

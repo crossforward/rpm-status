@@ -8,13 +8,34 @@
 
 #import <Cocoa/Cocoa.h>
 #import "RpmMenu.h"
+#import "ApplicationStatus.h"
+
+@class RpmMenu;
+@class PreferencesController;
 
 @interface ApiHandler : NSObject {
 
 	NSMutableData *receivedData;
 	RpmMenu* mainMenu;
+	
+	
+	//FDL
+	
+	PreferencesController *prefs;
+	int apiKeyCount;
+	int currentApiKeyIndex;
+	NSMutableArray* applications;
+	ApplicationStatus* current;
+	NSURLConnection *theConnection;
+
 }
 
--(void)getData:(RpmMenu*)target;
+@property (nonatomic, retain) PreferencesController *prefs;
+
+-(void)getData:(RpmMenu*)target ;
+-(id)init;
+-(void)getSingleData:(RpmMenu*)target;
+
+
 
 @end
