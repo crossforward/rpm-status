@@ -227,20 +227,18 @@
 
 	
 	apiKeyToAttempt=[key stringValue];
-	
-//	NSString *lastKeyAdded = [self nameForApiKeyNumber:apiKeyCount];	
-	
-//	NSString* current_key = [AGKeychain getPasswordFromKeychainItem:lastKeyAdded   withItemKind:lastKeyAdded	forUsername:lastKeyAdded];
+
 	NSMutableURLRequest *theRequest=[NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://rpm.newrelic.com/accounts.xml?include=application_health"]  cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:5.0];
 
-//	NSMutableURLRequest *theRequest=[NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://rpm.newrelic.com/accounts.xml?include=application_health"]];	
     [theRequest addValue:apiKeyToAttempt forHTTPHeaderField:@"x-license-key"];
 																		 
 	NSURLConnection *theConnection= [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
 
-	if (theConnection) {
+	if (theConnection) 
+	{
 		receivedData=[[NSMutableData data] retain];
-	} else {
+	} else 
+	{
 		// inform the user that the download could not be made
 	}
 	
@@ -273,7 +271,11 @@
 		[verification setStringValue:@"Failed"];
 		[verification setTextColor:[NSColor redColor]];
 		[progress setHidden:YES];
-	}else
+	}
+	
+
+	
+	else
 	{
 		[self saveSettings];
 		

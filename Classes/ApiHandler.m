@@ -109,7 +109,7 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
- 	//NSLog([[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);	
+ 	NSLog([[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);	
 	[receivedData appendData:data];
 }
 

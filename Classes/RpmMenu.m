@@ -168,7 +168,7 @@
 
 -(void)beginTimer
 {
-	timer = [NSTimer scheduledTimerWithTimeInterval: 20
+	timer = [NSTimer scheduledTimerWithTimeInterval: 60
 											 target: self
 										   selector: @selector(handleTimer:)
 										   userInfo: nil
@@ -190,7 +190,6 @@
 	[_statusItem setHighlightMode:YES];
 	[_statusItem setToolTip:@"RPM Status"];
 	[_statusItem setImage:[NSImage imageNamed:@"loading"]];
-	//[[[ApiHandler alloc] init] getData:self];
 
 	pref = [[PreferencesController alloc] init];
 	[pref initialize];
@@ -200,11 +199,11 @@
 	[apiHandler setPrefs:pref];
 
 	//First run, check for base key "rpm_key"... 	
-	if(![AGKeychain checkForExistanceOfKeychainItem:@"rpm_key0"	withItemKind:@"rpm_key0" forUsername:@"rpm_key0"]) {
+	if(![AGKeychain checkForExistanceOfKeychainItem:@"rpm_key0"	withItemKind:@"rpm_key0" forUsername:@"rpm_key0"]) 
+	{
 		
 		// ...if missing, create it and show preferences screen for entry of first API key.
 		NSLog(@"First Run.  Launch Prefs.");
-		//PreferencesController* pref = [[PreferencesController alloc] init];
 		[pref showWindow:self];
 	}
 	else
