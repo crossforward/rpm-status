@@ -19,3 +19,4 @@ INSTALLATION
  RELEASES:
   - 1.0 Initial version
   - 1.1 Increase refresh interval to 60 seconds at New Relic's request
+  - 1.2 Added ability to view multiple accounts, reskinned ui (Factory Design Labs)
