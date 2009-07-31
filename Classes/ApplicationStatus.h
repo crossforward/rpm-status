@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "ApplicationStatusView.h"
 
 @interface ApplicationStatus : NSObject {
 	IBOutlet NSTextField *ui_name;
@@ -17,7 +18,7 @@
 	IBOutlet NSTextField *throughput_field;
 	IBOutlet NSTextField *db_field;
 	
-	IBOutlet NSView *view;
+	IBOutlet ApplicationStatusView *view;
 	
 	NSInteger application_id;
 	NSString* name;
@@ -26,6 +27,9 @@
 	
 	NSString* cpu;
 	NSInteger cpu_status;
+	
+	NSString* cpu2;
+	NSInteger cpu_status2;
 	
 	NSString* memory;
 	NSInteger memory_status;
@@ -38,6 +42,15 @@
 	
 	NSString* db;
 	NSInteger db_status;
+	
+	NSImageView *statusBubble;
+
+	NSImageView *cpuStatus;
+	NSImageView *memStatus;
+	NSImageView *respStatus;
+	NSImageView *throughStatus;
+	NSImageView *dbStatus;
+
 
 }
 

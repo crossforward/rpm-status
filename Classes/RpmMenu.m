@@ -75,6 +75,7 @@
 	NSMenu *menu = [[NSMenu allocWithZone:menuZone] init];
 	NSMenuItem *menuItem;
 	
+//	[menu v
 	NSDate *date =[NSDate date];
 	
 	NSDateFormatter *df = [[NSDateFormatter alloc] init];
@@ -107,25 +108,32 @@
 	[menu addItem:[NSMenuItem separatorItem]];
 	
 	// Add Preferences Action
+	NSAttributedString *str=[[NSAttributedString alloc] initWithString:@"Preferences"];
+	
 	menuItem = [menu addItemWithTitle:@"Preferences"   action:@selector(actionPreferences:)	keyEquivalent:@""];
+	[menuItem setAttributedTitle:str];
 	[menuItem setToolTip:@"Set Credentials for RPM"];
 	[menuItem setTarget:self];
-	
+
 	// Add Quit Action
+	
+	NSAttributedString *str2=[[NSAttributedString alloc] initWithString:@"Quit"];
 	menuItem = [menu addItemWithTitle:@"Quit"   action:@selector(actionQuit:)		keyEquivalent:@""];
 	[menuItem setToolTip:@"Click to Quit this App"];
+	[menuItem setAttributedTitle:str2];
 	[menuItem setTarget:self];
 	
+ 
 	[_statusItem setMenu:menu];
 	
 	if(worst_application == 1) {
-		[_statusItem setImage:[NSImage imageNamed:@"green"]];
+		[_statusItem setImage:[NSImage imageNamed:@"greenAlert.png"]];
 	}
 	if(worst_application == 2) {
-		[_statusItem setImage:[NSImage imageNamed:@"yellow"]];
+		[_statusItem setImage:[NSImage imageNamed:@"yellowAlert.png"]];
 	}
 	if(worst_application == 3) {
-		[_statusItem setImage:[NSImage imageNamed:@"red"]];
+		[_statusItem setImage:[NSImage imageNamed:@"redAlert.png"]];
 	}
 	
 }
