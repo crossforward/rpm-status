@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>RPM Status</string>
 	<key>CFBundleIconFile</key>
-	<string>icon</string>
+	<string>RPM_Status_logo</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.crossforward.rpm_status</string>
 	<key>CFBundleInfoDictionaryVersion</key>
